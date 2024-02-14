@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .course-section {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .progress {
+        height: 10px;
+        margin-bottom: 20px;
+      }
+
+      .progress-bar {
+        transition: width 0.3s ease-in-out;
+        background-color: red;
+      }
+    </style>
+
+    <title>Course Learning Page</title>
+  </head>
+  <body>
+    <main class="container mt-4">
+      <!-- Course Sections -->
+      <section id="section1" class="course-section">
+        <h2>Section 1</h2>
+
+        <div class="video-container">
+          <iframe
+            id="videoPlayer"
+            width="1050"
+            height="315"
+            src="./video/it.mp4"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="progress">
+          <div
+            id="progress1"
+            class="progress-bar bg-success"
+            role="progressbar"
+            style="width: 50%"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
